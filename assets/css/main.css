@@ -1306,7 +1306,10 @@ input, select, textarea {
 	}
 
 	body {
-		background-image: url("images/overlay.png"), url("images/bg.jpg");
+		background-image: url("images/overlay.png"), url("images/custom-bg.jpg");
+		background-image: image-set(
+		  url("images/custom-bg.jpg") type("image/avif"),
+		  url("images/bg.jpg") type("image/jpeg"));
 		background-repeat: repeat, no-repeat;
 		background-size: auto, 100% 100%;
 		background-attachment: fixed;
@@ -2043,12 +2046,12 @@ input, select, textarea {
 						display: block;
 						position: absolute;
 						right: 0;
-						top: 50%;
+						top: 20%;
 						margin-top: -1.375em;
-						width: 2.75em;
+						width: 1.75em;
 						height: 2.75em;
 						background: #000;
-						background: rgba(0, 0, 0, 0.75);
+						background: rgb(230 139 8 / 22%);
 						color: #ffffff;
 						text-align: center;
 						line-height: 2.75em;
