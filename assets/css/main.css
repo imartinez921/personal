@@ -1381,6 +1381,10 @@ input, select, textarea {
 		letter-spacing: -0.015em;
 	}
 
+	#versify-demo h2, #versify-demo p {
+		text-align: center;
+	}
+
 	h3, h4, h5, h6 {
 		font-size: 1.25em;
 		letter-spacing: -0.015em;
@@ -1437,6 +1441,10 @@ input, select, textarea {
 
 	p, ul, ol, dl, table, blockquote, form {
 		margin-bottom: 2em;
+	}
+
+	#home p {
+		text-align: left;
 	}
 
 /* Table */
