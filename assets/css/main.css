@@ -1306,12 +1306,11 @@ input, select, textarea {
 	}
 
 	body {
-		background-image: url("images/overlay.png"), url("images/custom-bg.jpg");
 		background-image: image-set(
-		  url("images/custom-bg.jpg") type("image/avif"),
-		  url("images/bg.jpg") type("image/jpeg"));
+			url("images/custom-bg.jpg") type("image/avif"),
+			url("images/bg.jpg") type("image/jpeg"));
 		background-repeat: repeat, no-repeat;
-		background-size: auto, 100% 100%;
+		background-size: cover;
 		background-attachment: fixed;
 		overflow-y: scroll;
 	}
