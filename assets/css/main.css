@@ -1568,7 +1568,7 @@ input, select, textarea {
 		.image.fit {
 			display: block;
 			width: 100%;
-			border: 5px solid darkgrey;
+			border: 3px solid #b1562a;
 		}
 
 		.image.featured {
