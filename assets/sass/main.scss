@@ -441,12 +441,20 @@
 	ul {
 		list-style: disc;
 		padding-left: 1em;
+	}
 
-		li {
+		ul li {
 			padding-left: 0.5em;
 		}
 
+	ol {
+		list-style: decimal;
+		padding-left: 1.25em;
 	}
+
+		ol li {
+			padding-left: 0.25em;
+		}
 
 	ol {
 		list-style: decimal;
@@ -848,4 +856,85 @@
 				}
 			}
 		}
+	}
+
+
+// ABOUT ME / FAQ
+	#about-me {
+		.arrow {
+			display: block;
+			position: absolute;
+			right: 0;
+			top: 50%;
+			margin-top: -1.375em;
+			width: 2.75em;
+			height: 2.75em;
+			background: #000;
+			background: rgba(0, 0, 0, 0.75);
+			color: #f30909;
+			text-align: center;
+			line-height: 2.75em;
+			font-size: 1.5em;
+			z-index: 1;
+			@include vendor('transition', ('width .15s ease-in-out', 'padding-right .15s ease-in-out'));
+
+			&:before {
+				position: relative;
+				padding-right: 0;
+				top: 0.125em;
+			}
+
+			span {
+				display: block;
+				text-indent: -9999px;
+			}
+
+			&:hover {
+				width: 3em;
+				padding-right: 0.25em;
+			}
+		}
+	}
+
+	.nav {
+		list-style-type: none;
+		border-radius: 3px;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		font-size: 1.1em;
+	}
+
+	.faq-item {
+		padding: 5px 0 10px 0;
+		border-bottom: 1px solid rgba(63, 46, 73, 0.3);
+		margin: 0 0 5px 0;
+	}
+
+	.faq-item:last-child {
+		border-bottom: none;
+	}
+
+	.nav-link,
+	.nav-submenu-link {
+		color: #777777;
+		text-decoration: none;
+		display: block;
+		/* background: red; */
+		@include vendor('transition', 'background 0.5s ease-in');
+	}
+
+	.nav-submenu {
+		overflow: hidden;
+		max-height: 0;
+		@include vendor('transition', 'max-height 0.5s');
+		
+		&:target {
+			max-height: 100%;
+		}
+	}
+		
+	.nav-submenu-link {
+		color: black;
+		margin: 10px 0 0 0;
 	}
