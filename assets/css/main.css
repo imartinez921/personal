@@ -2004,12 +2004,9 @@ input, select, textarea {
 				-moz-align-items: center;
 				-webkit-align-items: center;
 				-ms-align-items: center;
-				align-items: center;
 			}
-
-				#main > .panel.intro .resume-button {
-					display: block;
-					margin: auto;
+				#main>.panel.intro .resume-button {
+					position: relative;
 					padding: 10px 20px;
 					font-size: 16px;
 					font-weight: 1000;
@@ -2017,12 +2014,27 @@ input, select, textarea {
 					text-decoration: none;
 					text-shadow: 2px 2px 2px #234D3C;
 					background-color: #e85506;
-					/* Change this to your preferred button color */
 					color: white;
-					/* Change this to your preferred text color */
 					border-radius: 5px;
 					border: none;
 					cursor: pointer;
+				}
+
+				#main > .panel.intro .resume-button::before {
+					content: '';
+					position: absolute;
+					border-radius: 5px;
+					top: 0;
+					bottom: 0;
+					left: 0;
+					right: 0;
+					transition: transform .3s ease-in-out;
+				}
+
+				#main>.panel.intro .resume-button:hover::before {
+					background-color: rgba(195, 77, 4, 0.322);
+					border-color: #c34d04b8;
+					box-shadow: 0px 0px 2px 2px #c34d048e;
 				}
 
 				#main > .panel.intro .pic {
