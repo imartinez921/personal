@@ -2007,6 +2007,24 @@ input, select, textarea {
 				align-items: center;
 			}
 
+				#main > .panel.intro .resume-button {
+					display: block;
+					margin: auto;
+					padding: 10px 20px;
+					font-size: 16px;
+					font-weight: 1000;
+					text-align: center;
+					text-decoration: none;
+					text-shadow: 2px 2px 2px #234D3C;
+					background-color: #e85506;
+					/* Change this to your preferred button color */
+					color: white;
+					/* Change this to your preferred text color */
+					border-radius: 5px;
+					border: none;
+					cursor: pointer;
+				}
+
 				#main > .panel.intro .pic {
 					text-decoration: none;
 					position: relative;
